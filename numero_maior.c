@@ -1,5 +1,5 @@
 #include <stdio.h> //declaração de biblioteca
-int maiorValor(int a, int b, int c);//declaração da função
+int maiorValor(int a, int b, int c);//declaração da função para encontrar o numero maior que o usuario colocar
 int main(){
     int num1, num2, num3;// declarações das variaveis
     printf("digite 3 numeros inteiros\n", num1, num2, num3);
@@ -8,7 +8,7 @@ int main(){
     printf("maior valor eh: %d\n", maior);
     return 0;
 }
-int maiorValor(int a, int b, int c) {//condição para encontrar o numero maior que o usuario colocar
+int maiorValor(int a, int b, int c) {//Chama a função maiorValor
     int maior= a;
  if (b > maior){
      maior= b;
