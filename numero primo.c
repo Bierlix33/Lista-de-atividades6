@@ -5,18 +5,18 @@ int main() {
     printf("digite um numero inteiro\n");
     scanf("%d", &valor);
     
-    if(Ehprimo(valor)) { //if else para ser utilizado junto com a estrutura de repetição for
+    if(Ehprimo(valor)) { //if else para ser utilizado para dar codição a função
         printf("eh primo");
 }else{
     printf("nao eh primo");
 }
 return 0;
 }
-int Ehprimo(int numero) {
+int Ehprimo(int numero) {//chama a função
     if(numero <=1) { // estruturas de repetição para verificar se o numero é primo ou não
     return 0;
 }
-    for(int i =2;i < numero; i++) {
+    for(int i =2;i < numero; i++) {// estrutura de repetição for para que possa encontrar o numero primo
         if(numero % i == 0){
             return 0;
     }
